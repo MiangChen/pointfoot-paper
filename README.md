@@ -8,12 +8,12 @@ This repository focuses on research related to wheel-legged（mainly） and legg
 
 - [Movement](#movement)
      - [ANYmal - a highly mobile and dynamic quadrupedal robot](#anymal---a-highly-mobile-and-dynamic-quadrupedal-robot)
-     - [Keep Rollin' - Whole-Body Motion Control and Planning for Wheeled Quadrupedal Robots](#Keep Rollin' - Whole-Body Motion Control and Planning for Wheeled Quadrupedal Robots)
+     - [Keep Rollin' - Whole-Body Motion Control and Planning for Wheeled Quadrupedal Robots](#Keep Rollin-'- Whole-Body Motion Control and Planning for Wheeled Quadrupedal Robots)
      - [Ascento: A Two-Wheeled Jumping Robot](#ascento-a-two-wheeled-jumping-robot)
      - [LQR-Assisted Whole-Body Control of a Wheeled Bipedal Robot With Kinematic Loops](#lqr-assisted-whole-body-control-of-a-wheeled-bipedal-robot-with-kinematic-loops)
      - [Trajectory Optimization for Wheeled-Legged Quadrupedal Robots Driving in Challenging Terrain](#trajectory-optimization-for-wheeled-legged-quadrupedal-robots-driving-in-challenging-terrain)
      - [Sim-to-Real Learning of All Common Bipedal Gaits via Periodic Reward Composition](#sim-to-real-learning-of-all-common-bipedal-gaits-via-periodic-reward-composition)
-     - [Underactuated Motion Planning and Control for Jumping With Wheeled-Bipedal Robots](#Underactuated Motion Planning and Control for Jumping With Wheeled-Bipedal Robots)
+     - [Underactuated Motion Planning and Control for Jumping With Wheeled-Bipedal Robots](#underactuated-motion-planning-and-control-for-jumping-with-wheeled-bipedal-robots)
      - [Balance Control of a Novel Wheel-legged Robot: Design and Experiments](#balance-control-of-a-novel-wheel-legged-robot-design-and-experiments)
      - [Learning-Based Balance Control of Wheel-Legged Robots](#learning-based-balance-control-of-wheel-legged-robots)
      - [Whole-Body MPC and Online Gait Sequence Generation for Wheeled-Legged Robots](#whole-body-mpc-and-online-gait-sequence-generation-for-wheeled-legged-robots)
@@ -142,7 +142,7 @@ This repository focuses on research related to wheel-legged（mainly） and legg
 
 ***
 
-##### Underactuated Motion Planning and Control for Jumping With Wheeled-Bipedal Robots
+##### Underactuated Motion Planning and Control for Jumping With Wheeled Bipedal Robots
 
 - IEEE RAL 2020 December 
 - paper link: https://ieeexplore.ieee.org/abstract/document/9310341
