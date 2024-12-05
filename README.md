@@ -44,7 +44,7 @@ This repository focuses on research related to wheel-legged（mainly） and legg
 
 ***
 
-##### Keep Rollin' - Whole-Body Motion Control and Planning for Wheeled Quadrupedal Robots
+##### Keep Rollin-Whole-Body Motion Control and Planning for Wheeled Quadrupedal Robots
 
 - RAL 2019 Jan  
 - paper link: https://arxiv.org/abs/1809.03557
