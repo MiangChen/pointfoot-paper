@@ -1,20 +1,33 @@
-# Wheelleg Paper
+# Wheel-legged & legged robot Paper
 
-This is a repostory to research on papers on wheel-leg robots
-
-
-
-## Table 
-
-### Papers
-
-- Ascento: A Two-Wheeled Jumping Robot
+This repository focuses on research related to wheel-legged（mainly） and legged robots, with an emphasis on movement and manipulation tasks.
 
 
 
+## Table of Contents
+
+- [Movement](#movement)
+     - [ANYmal - a highly mobile and dynamic quadrupedal robot](#anymal---a-highly-mobile-and-dynamic-quadrupedal-robot)
+     - [Keep Rollin' - Whole-Body Motion Control and Planning for Wheeled Quadrupedal Robots](#Keep Rollin' - Whole-Body Motion Control and Planning for Wheeled Quadrupedal Robots)
+     - [Ascento: A Two-Wheeled Jumping Robot](#ascento-a-two-wheeled-jumping-robot)
+     - [LQR-Assisted Whole-Body Control of a Wheeled Bipedal Robot With Kinematic Loops](#lqr-assisted-whole-body-control-of-a-wheeled-bipedal-robot-with-kinematic-loops)
+     - [Trajectory Optimization for Wheeled-Legged Quadrupedal Robots Driving in Challenging Terrain](#trajectory-optimization-for-wheeled-legged-quadrupedal-robots-driving-in-challenging-terrain)
+     - [Sim-to-Real Learning of All Common Bipedal Gaits via Periodic Reward Composition](#sim-to-real-learning-of-all-common-bipedal-gaits-via-periodic-reward-composition)
+     - [Underactuated Motion Planning and Control for Jumping With Wheeled-Bipedal Robots](#Underactuated Motion Planning and Control for Jumping With Wheeled-Bipedal Robots)
+     - [Balance Control of a Novel Wheel-legged Robot: Design and Experiments](#balance-control-of-a-novel-wheel-legged-robot-design-and-experiments)
+     - [Learning-Based Balance Control of Wheel-Legged Robots](#learning-based-balance-control-of-wheel-legged-robots)
+     - [Whole-Body MPC and Online Gait Sequence Generation for Wheeled-Legged Robots](#whole-body-mpc-and-online-gait-sequence-generation-for-wheeled-legged-robots)
+     - [A fuzzy LQR PID control for a two-legged wheel robot with uncertainties and variant height](#a-fuzzy-lqr-pid-control-for-a-two-legged-wheel-robot-with-uncertainties-and-variant-height)
+     - [Reinforcement Learning for Blind Stair Climbing with Legged and Wheeled-Legged Robots](#reinforcement-learning-for-blind-stair-climbing-with-legged-and-wheeled-legged-robots)
+     - [Learning Robust Autonomous Navigation and Locomotion for Wheeled-Legged Robots](#learning-robust-autonomous-navigation-and-locomotion-for-wheeled-legged-robots)
+- [Manipulation](#manipulation)
+         - [Visual Whole-Body Control for Legged Loco-Manipulation](#visual-whole-body-control-for-legged-loco-manipulation)
 
 
-***
+
+
+
+## Movement
 
 ##### ANYmal - a highly mobile and dynamic quadrupedal robot
 
@@ -112,7 +125,24 @@ This is a repostory to research on papers on wheel-leg robots
 
 ***
 
-##### Department of Mechanical and Energy Engineering, Southern University of Science and Technology, Shenzhen, China
+##### Sim-to-Real Learning of All Common Bipedal Gaits via Periodic Reward Composition
+
+- IEEE ICRA 2020 November 
+- paper link: https://arxiv.org/abs/2011.01387
+  - Oregon State University
+- overview:
+
+<img src="./image/202011_reward1.png" style="zoom:40%;" />
+
+​	This paper present a reward design framework which makes it easy to learn policies which can stand, walk, run, gallop, hop, and skip on hardware. We condition the reward function based on a number of gait parameters, and also provide these parameters to the LSTM policy, which outputs PD joint position targets and PD gains to the robot.
+
+<img src="./image/202011_reward2.png" style="zoom:40%;" />
+
+​	A series of images showing a neural network policy controlling Cassie and continuously transitioning from hopping to galloping to walking. We present a simple reward design paradigm which makes use of probabilistic intervals to apply cost functions at specific times, allowing policies to learn all common bipedal gaits exhibited by animals in nature.
+
+***
+
+##### Underactuated Motion Planning and Control for Jumping With Wheeled-Bipedal Robots
 
 - IEEE RAL 2020 December 
 - paper link: https://ieeexplore.ieee.org/abstract/document/9310341
@@ -136,7 +166,6 @@ This is a repostory to research on papers on wheel-leg robots
   - Tencent Robotics X
   - Control and Networks Lab, New York University
   - Department of Electrical & Electronic Engineering, School of Engineering, University of Manchester
-
 - main contribution:
   1. To balance the novel-designed wheellegged robot, the nonlinear controller IDA-PBC for the position regulation problem in the past literature is redesigned for the velocity tracking problem. The nonlinear controller is implemented in practice, and various experiments validate the stability and robustness of the controller
   2. For the problem when the equilibrium pitch angle is unknown, linear output regulation is applied to regulate the robot stand still, and is tested in the experiment.
@@ -154,7 +183,9 @@ This is a repostory to research on papers on wheel-leg robots
 
 ![](./image/2021oct_wl.png)
 
-(a) Mechanical structure of the wheel-legged robot. (b) Template model of the robot.
+​	(a) Mechanical structure of the wheel-legged robot. 
+
+​	(b) Template model of the robot.
 
 - main contribution:
   1) Based on RL and ADP techniques, a data-driven VI algorithm is proposed to generate a near-optimal balance controller in the absence of the accurate dynamics of the wheel-legged robot. The first application of the learning-based control method for the balance of wheel-legged robots with experimental validations. 
@@ -187,19 +218,36 @@ This is a repostory to research on papers on wheel-leg robots
 ##### A fuzzy LQR PID control for a two-legged wheel robot with uncertainties and variant height
 
 - JRC 2023 
-
 - paper link: https://journal.umy.ac.id/index.php/jrc/article/view/19448/8570
 
   - Department of Automation Control, Ho Chi Minh City University of Technology and Education, Vietnam
 
   - Faculty of Mechanical Engineering, Ho Chi Minh City University of Technology, Vietnam
-
 - main contribution:
 
   1. A proposed control is constructed based on the fuzzy  supervisor and three LQR controllers which are  respectively designed according to three postures of the  TLWR, low, medium and high postures. As a result, the  complexity in the TLWR is reduced in the control design. 
   2. The effectiveness of the proposed control is verified on a  practical testbench and the challenges, measuring the  robotic height and compensating angles for the pitch  angle in the real testbench, are also discussed in this  paper.
 
-- 
+***
+
+##### Reinforcement Learning for Blind Stair Climbing with Legged and Wheeled-Legged Robots
+
+- IEEE  ICRA 2024 February 
+
+- paper link: https://arxiv.org/abs/2402.06143
+  - Department of Computer and Software Engineering, Ecole Polytech- ´ nique de Montreal, 2900 Boul. ´ Edouard-Montpetit, Qu ´ ebec, Canada
+  - Autonomous Systems Lab, ETH Zurich, Switzerland.
+  - Robotic Systems Lab, ETH Zurich, Switzerland.
+  - Ascento Robotics, Zurich, Switzerland
+- overview:
+
+<img src="image/202402_climb1.png" style="zoom:60%;" />
+
+​	Proposed Method: Ascento Robot, Unitree Go1, Cassie and ANYmal on Wheels climbing steps.
+
+<img src="image/202402_climb2.png" style="zoom:60%;" />
+
+​	System Overview during Training and Deployment: At every training step, the algorithm receives the observation and privileged information. The actor outputs an action for the next simulation step. During deployment, the actor receives only the observation and outputs an action for the robot to execute.
 
 ***
 
@@ -220,5 +268,24 @@ This is a repostory to research on papers on wheel-leg robots
 
 ​	(A) This wheeled-legged quadrupedal robot is equipped with various payloads for onboard terrain mapping, obstacle detection, and localization. (B) Overview of the navigation system. The system is driven by two neural network policies operating at different levels. The high-level navigation policy observes two waypoints (WP 1 and WP 2) and generates target velocity commands for the locomotion policy. The low-level locomotion policy then controls joint actuators and follows the velocity commands. (C) The training environment is designed to dynamically generate new navigation paths for each episode, optimizing the learning process. By leveraging pre-generated obstacle-free paths, we enhance the navigation capabilities of our system.
 
+
+
 ***
+
+
+
+## Manipulation
+
+##### Visual Whole-Body Control for Legged Loco-Manipulation
+
+- CoRL 2024 March
+- paper link: https://arxiv.org/abs/2403.16967
+  - UC San Diego
+- homepage: https://wholebody-b1.github.io/
+
+
+
+***
+
+
 
