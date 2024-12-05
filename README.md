@@ -8,7 +8,7 @@ This repository focuses on research related to wheel-legged（mainly） and legg
 
 - [Movement](#movement)
      - [ANYmal - a highly mobile and dynamic quadrupedal robot](#anymal---a-highly-mobile-and-dynamic-quadrupedal-robot)
-     - [Keep Rollin' - Whole-Body Motion Control and Planning for Wheeled Quadrupedal Robots](#Keep Rollin-'- Whole-Body Motion Control and Planning for Wheeled Quadrupedal Robots)
+     - [Keep Rollin' - Whole-Body Motion Control and Planning for Wheeled Quadrupedal Robots](#keep-rollin-whole-body-motion-control-and-planning-for-wheeled-quadrupedal-robots)
      - [Ascento: A Two-Wheeled Jumping Robot](#ascento-a-two-wheeled-jumping-robot)
      - [LQR-Assisted Whole-Body Control of a Wheeled Bipedal Robot With Kinematic Loops](#lqr-assisted-whole-body-control-of-a-wheeled-bipedal-robot-with-kinematic-loops)
      - [Trajectory Optimization for Wheeled-Legged Quadrupedal Robots Driving in Challenging Terrain](#trajectory-optimization-for-wheeled-legged-quadrupedal-robots-driving-in-challenging-terrain)
